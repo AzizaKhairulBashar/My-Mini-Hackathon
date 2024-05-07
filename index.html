@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountains</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+
+
+<body>
+    <section id="banner">
+        <img src="images/SiteLogo.png" class="logo">
+        <div class="banner-text">
+            <h1>Mountains</h1>
+            <p>Explore the Colourful World, And feel Glad</p>
+            <div class="banner-btn">
+                <a href="#"><span></span>Find Out</a>
+                <a href="#"><span></span>Read More</a>
+            </div>
+        </div>
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">PRICING</a></li>
+                <li><a href="#">TEAM</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="images/Untitled-1.png" id="menu">
+    </div>
+
+    
+
+
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "images/cross.png";
+            }
+            else {
+                sideNav.style.right = "-250px";
+                menu.src = "images/Untitled-1.png";
+            }
+        }
+    </script>
+</body>
+
+</html>
